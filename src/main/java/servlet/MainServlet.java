@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MainServlet extends HttpServlet {
     private PostController postController;
-    public static final String API_POSTS = "/api/posts";
-    public static final String API_POSTS_ID = "/api/posts/\\d+";
-    public static final String STR = "/";
-    public static final String METHOD_GET = "GET";
-    public static final String METHOD_POST = "POST";
-    public static final String METHOD_DELETE = "DELETE";
+    private static final String API_POSTS = "/api/posts";
+    private static final String API_POSTS_ID = "/api/posts/\\d+";
+    private static final String STR = "/";
+    private static final String METHOD_GET = "GET";
+    private static final String METHOD_POST = "POST";
+    private static final String METHOD_DELETE = "DELETE";
 
     @Override
     public void init() {
